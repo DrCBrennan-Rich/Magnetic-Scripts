@@ -12,8 +12,8 @@ MomentPerAtom = 2.1 #In units of Bohr Magnetons
 EmuPerVolume = 700 #In units of emu/cm^3
 
 def emu2bohr(EmuPerVolume, Volume, NumberOfAtoms):
-     """Convert from magnetisation in Emu/cm^3 to magnetisation in Bohr-
-     magnetons per atom.
+     """Convert from magnetisation in emu/cm^3 to magnetisation in Bohr-
+     magnetons/atom.
 
     This function recieves the magnetisation in emu per cm^3 and uses the
     known volume and number of magnetic atoms in the unit cell to convert
@@ -36,6 +36,23 @@ def emu2bohr(EmuPerVolume, Volume, NumberOfAtoms):
     
 
 def bohr2emu(MomentPerAtom, Volume, NumberOfAtoms):
+     """Convert from magnetisation in magnetons/atom to magnetisation in Bohr-
+     emu/cm^3.
+
+    This function recieves the magnetisation in emu per cm^3 and uses the
+    known volume and number of magnetic atoms in the unit cell to convert
+    into the magnetisation in Bohr-magnetons.
+
+    Args:        
+        EmuPerVolume (float): Input magnetisation (emu/cm^3).
+        Volume (float): Unit cell volume (cm^3).       
+        NumberOfAtoms (float): Number of atoms in the unitcell (unitless).        
+            
+    Returns:
+        MagOutput (float): Output magnetisation (J/T).
+
+    Notes:
+    """
     
     MagOutput = (NumberOfAtoms*MomentPerAtom*muB*1E3)/(Volume*1E-24)
     
