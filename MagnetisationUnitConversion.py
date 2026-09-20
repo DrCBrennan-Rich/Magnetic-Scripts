@@ -20,12 +20,12 @@ def emu2bohr(EmuPerVolume, Volume, NumberOfAtoms):
     into the magnetisation in Bohr-magnetons.
 
     Args:        
-        EmuPerVolume (float): Magnetisation (emu/cm^3).
+        EmuPerVolume (float): Input magnetisation (emu/cm^3).
         Volume (float): Unit cell volume (cm^3).       
         NumberOfAtoms (float): Number of atoms in the unitcell (unitless).        
             
     Returns:
-        IcRn (float): Critical voltage of the Josephson junction (uV).
+        MagOutput (float): Output magnetisation (J/T).
 
     Notes:
     """
