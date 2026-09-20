@@ -44,12 +44,12 @@ def bohr2emu(MomentPerAtom, Volume, NumberOfAtoms):
     into the magnetisation in emu per cm^3.
 
     Args:        
-        EmuPerVolume (float): Input magnetisation (emu/cm^3).
+        MomentPerAtom (float): Input magnetisation (J/T).
         Volume (float): Unit cell volume (cm^3).       
         NumberOfAtoms (float): Number of atoms in the unitcell (unitless).        
             
     Returns:
-        MagOutput (float): Output magnetisation (J/T).
+        MagOutput (float): Output magnetisation (emu/cm^3).
 
     Notes:
     """
