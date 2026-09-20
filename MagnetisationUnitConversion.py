@@ -17,7 +17,7 @@ def emu2bohr(EmuPerVolume, Volume, NumberOfAtoms):
 
     This function recieves the magnetisation in emu per cm^3 and uses the
     known volume and number of magnetic atoms in the unit cell to convert
-    into the magnetisation in Bohr-magnetons.
+    into the magnetisation in Bohr-magnetons per atom.
 
     Args:        
         EmuPerVolume (float): Input magnetisation (emu/cm^3).
@@ -39,9 +39,9 @@ def bohr2emu(MomentPerAtom, Volume, NumberOfAtoms):
      """Convert from magnetisation in magnetons/atom to magnetisation in Bohr-
      emu/cm^3.
 
-    This function recieves the magnetisation in emu per cm^3 and uses the
+    This function recieves the magnetisation in Bohr-magnetons per atom and uses the
     known volume and number of magnetic atoms in the unit cell to convert
-    into the magnetisation in Bohr-magnetons.
+    into the magnetisation in emu per cm^3.
 
     Args:        
         EmuPerVolume (float): Input magnetisation (emu/cm^3).
