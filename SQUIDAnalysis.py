@@ -19,6 +19,22 @@ VolumeError = Volume*np.sqrt((ThicknessUncertainty/Thickness)**2
 nfit = 5
 
 def Load_MPMS(filename):
+    """Load the data from all the SQUID files from a given folder.
+
+    This function iterates through all the SQUID fikes in a given folder 
+    and returns the field, field error, moment, moment error, temperature
+    and the entire loaded array for further examination.
+
+    Args:        
+        MomentPerAtom (float): Input magnetisation (J/T).
+        Volume (float): Unit cell volume (cm^3).       
+        NumberOfAtoms (float): Number of atoms in the unitcell (unitless).        
+            
+    Returns:
+        MagOutput (float): Output magnetisation (emu/cm^3).
+
+    Notes:
+    """
     #Load a Quantum Design MPMS3.dat file
 
     with open(filename) as f:
