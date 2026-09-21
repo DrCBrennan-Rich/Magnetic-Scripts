@@ -26,9 +26,7 @@ def Load_MPMS(filename):
     and the entire loaded array for further examination.
 
     Args:        
-        MomentPerAtom (float): Input magnetisation (J/T).
-        Volume (float): Unit cell volume (cm^3).       
-        NumberOfAtoms (float): Number of atoms in the unitcell (unitless).        
+        filename (string): Folder name containing the SQUID files.     
             
     Returns:
         MagOutput (float): Output magnetisation (emu/cm^3).
