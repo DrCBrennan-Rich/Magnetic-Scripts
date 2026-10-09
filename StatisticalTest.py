@@ -21,7 +21,9 @@ def Analyse_Measurements(data, alpha=0.05):
     normal = p > alpha
 
     print(f"Number of measurements : {len(data)}")
+    
     print(f"Mean                   : {mean:.6g}")
+    
     print(f"Standard deviation     : {StandardDeviation:.6g}")
     print(f"Standard error         : {StandardErrorMean:.6g}")
     print(f"Skewness               : {stats.skew(data):.3f}")
